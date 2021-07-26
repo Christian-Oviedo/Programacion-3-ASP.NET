@@ -7,10 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Programacion 3</title>
 </head>
-<body style="background-color:aquamarine">
+<body style="background-color:lemonchiffon">
     <form id="form1" runat="server">
            <div class="jumbotron">
-        <h1 style="color: mediumvioletred">Completar los campos</h1>
+        <h1 style="color: darkblue">Completar los campos</h1>
         <p class="lead">Programacion 3, eventos y tipos de controles de ASP.NET.<br />
             La programación es el proceso de creación de programas informáticos. <br />
             Esta definición se puede  interpretar de la siguiente manera.<br /> 
@@ -89,18 +89,18 @@
                 <asp:ListItem Value="https://www.facebook.com/">Facebook</asp:ListItem>
             </asp:BulletedList>
           
-            <h4>Link ITSC</h4>
+            <h4>Link ITSC otra pestaña</h4>
             <asp:HyperLink ID="hlInstituto" runat="server" NavigateUrl="https://www.institutotecnicocordoba.com/" Target="_blank">Instituto Tecnico Superior de Cordoba</asp:HyperLink>
             
             <br />
             <h4>Link Webform2<br /></h4>
             <asp:HyperLink ID="hpWF2" runat="server" NavigateUrl="~/WebForm2.aspx">WebForms2</asp:HyperLink>
             
-            <h4>Link imagen</h4>
+            <h4>Link imagen otra pestaña</h4>
             <asp:HyperLink ID="hpImagen" runat="server" ImageUrl="~/inst.png" NavigateUrl="https://www.institutotecnicocordoba.com/" Target="_blank">Link con Imagen</asp:HyperLink>
             
            
-            <h4>Link Button del lado del cliente</h4>
+            <h4>Link Button del lado del cliente y WF2</h4>
             <asp:LinkButton ID="lkbScript" runat="server" PostBackUrl="~/WebForm2.aspx" OnClientClick="return Funcion();">Script</asp:LinkButton>
 
             <script type="text/javascript">
@@ -118,7 +118,7 @@
             <asp:Button ID="btnCalendario" runat="server" OnClick="btnCalendario_Click" Text="Calendario" />
             <br />
             <asp:Calendar ID="Calendario" runat="server" OnSelectionChanged="Calendario_SelectionChanged"></asp:Calendar>
-            <br />
+            Seleccionar fecha para verla en el textbox<br />
             <asp:TextBox ID="txtFecha" runat="server" Width="249px"></asp:TextBox>
             <br />
             <br />
